@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "atthend",
+  "version": "${version}",
+  "name": "AtTheEnd",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/atthend/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "anofev.atthend.client.AtthendClient"
+    ],
+    "main": [
+      "anofev.atthend.Atthend"
+    ]
+  },
+  "mixins": [
+    "atthend.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
